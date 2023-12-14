@@ -3,19 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise 2</title>
+  <title>Exercise 4</title>
 </head>
 <style>
   .box {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 200px;
+}
+.box>*:first-child {
+  align-self: stretch;
+}
+.box .selected {
+  align-self: center;
 }
 </style>
 <body>
   <div class="box">
     <div>One</div>
     <div>Two</div>
-    <div>Three</div>
+    <div class="selected">Three</div>
+    <div>Four</div>
   </div>
 </body>
 </html>

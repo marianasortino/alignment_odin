@@ -3,30 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exercise 6</title>
+  <title>Exercise 12</title>
 </head>
 <style>
-  box {
+  .box {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 2em;
 }
 
-.one {
-  flex: 1;
-}
-
-.two {
-  flex: 1;
-}
-
-.three {
+.box > * {
   flex: 1;
 }
 </style>
 <body>
   <div class="box">
-    <div class="one">One</div>
-    <div class="two">Two</div>
-    <div class="three">Three</div>
+    <div>One</div>
+    <div>Two</div>
+    <div>Three</div>
+    <div>Four</div>
+    <div>Five</div>
+    <div>Six</div>
   </div>
 </body>
 </html>
